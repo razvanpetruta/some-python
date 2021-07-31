@@ -3,7 +3,7 @@ from tkinter import *
 root = Tk()
 root.title("Calculator")
 
-e = Entry(root, width=40, borderwidth=5)
+e = Entry(root, width=40, borderwidth=2)
 e.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
 
 # functions
@@ -59,24 +59,24 @@ def buttonEqual():
 
 # create buttons
 
-button_1 = Button(root, text="1", padx=40, pady=20, command=lambda: button_click(1), bg="#7FD8BE", fg="#3C3744", activebackground="#CFCBCA")
-button_2 = Button(root, text="2", padx=40, pady=20, command=lambda: button_click(2), bg="#7FD8BE", fg="#3C3744", activebackground="#CFCBCA")
-button_3 = Button(root, text="3", padx=40, pady=20, command=lambda: button_click(3), bg="#7FD8BE", fg="#3C3744", activebackground="#CFCBCA")
-button_4 = Button(root, text="4", padx=40, pady=20, command=lambda: button_click(4), bg="#7FD8BE", fg="#3C3744", activebackground="#CFCBCA")
-button_5 = Button(root, text="5", padx=40, pady=20, command=lambda: button_click(5), bg="#7FD8BE", fg="#3C3744", activebackground="#CFCBCA")
-button_6 = Button(root, text="6", padx=40, pady=20, command=lambda: button_click(6), bg="#7FD8BE", fg="#3C3744", activebackground="#CFCBCA")
-button_7 = Button(root, text="7", padx=40, pady=20, command=lambda: button_click(7), bg="#7FD8BE", fg="#3C3744", activebackground="#CFCBCA")
-button_8 = Button(root, text="8", padx=40, pady=20, command=lambda: button_click(8), bg="#7FD8BE", fg="#3C3744", activebackground="#CFCBCA")
-button_9 = Button(root, text="9", padx=40, pady=20, command=lambda: button_click(9), bg="#7FD8BE", fg="#3C3744", activebackground="#CFCBCA")
-button_0 = Button(root, text="0", padx=40, pady=20, command=lambda: button_click(0), bg="#7FD8BE", fg="#3C3744", activebackground="#CFCBCA")
+button_1 = Button(root, text="1", padx=40, pady=20, command=lambda: button_click(1), bg="#7FD8BE", fg="#3C3744", activebackground="#CFCBCA", border=5)
+button_2 = Button(root, text="2", padx=40, pady=20, command=lambda: button_click(2), bg="#7FD8BE", fg="#3C3744", activebackground="#CFCBCA", border=5)
+button_3 = Button(root, text="3", padx=40, pady=20, command=lambda: button_click(3), bg="#7FD8BE", fg="#3C3744", activebackground="#CFCBCA", border=5)
+button_4 = Button(root, text="4", padx=40, pady=20, command=lambda: button_click(4), bg="#7FD8BE", fg="#3C3744", activebackground="#CFCBCA", border=5)
+button_5 = Button(root, text="5", padx=40, pady=20, command=lambda: button_click(5), bg="#7FD8BE", fg="#3C3744", activebackground="#CFCBCA", border=5)
+button_6 = Button(root, text="6", padx=40, pady=20, command=lambda: button_click(6), bg="#7FD8BE", fg="#3C3744", activebackground="#CFCBCA", border=5)
+button_7 = Button(root, text="7", padx=40, pady=20, command=lambda: button_click(7), bg="#7FD8BE", fg="#3C3744", activebackground="#CFCBCA", border=5)
+button_8 = Button(root, text="8", padx=40, pady=20, command=lambda: button_click(8), bg="#7FD8BE", fg="#3C3744", activebackground="#CFCBCA", border=5)
+button_9 = Button(root, text="9", padx=40, pady=20, command=lambda: button_click(9), bg="#7FD8BE", fg="#3C3744", activebackground="#CFCBCA", border=5)
+button_0 = Button(root, text="0", padx=40, pady=20, command=lambda: button_click(0), bg="#7FD8BE", fg="#3C3744", activebackground="#CFCBCA", border=5)
 
-button_add = Button(root, text="+", padx=39, pady=20, command=add_numbers, bg="#7FD8BE", fg="#3C3744", activebackground="#CFCBCA")
-button_equal = Button(root, text="   =  ", padx=79, pady=20, command=buttonEqual, bg="#7FD8BE", fg="#3C3744", activebackground="#CFCBCA")
-button_clear = Button(root, text="  CE ", padx=79, pady=20, command=buttonClear, bg="#7FD8BE", fg="#3C3744", activebackground="#CFCBCA")
+button_add = Button(root, text="+", padx=39, pady=20, command=add_numbers, bg="#7FD8BE", fg="#3C3744", activebackground="#CFCBCA", border=5)
+button_equal = Button(root, text="    =   ", padx=79, pady=20, command=buttonEqual, bg="#7FD8BE", fg="#3C3744", activebackground="#CFCBCA", border=5)
+button_clear = Button(root, text="  CE   ", padx=79, pady=20, command=buttonClear, bg="#7FD8BE", fg="#3C3744", activebackground="#CFCBCA", border=5)
 
-button_subtract = Button(root, text="- ", padx=39, pady=20, command=substract_numbers, bg="#7FD8BE", fg="#3C3744", activebackground="#CFCBCA")
-button_multiply = Button(root, text="*", padx=40, pady=20, command=multiply_numbers, bg="#7FD8BE", fg="#3C3744", activebackground="#CFCBCA")
-button_divide = Button(root, text="/ ", padx=39, pady=20, command=divide_numbers, bg="#7FD8BE", fg="#3C3744", activebackground="#CFCBCA")
+button_subtract = Button(root, text="- ", padx=39, pady=20, command=substract_numbers, bg="#7FD8BE", fg="#3C3744", activebackground="#CFCBCA", border=5)
+button_multiply = Button(root, text="*", padx=40, pady=20, command=multiply_numbers, bg="#7FD8BE", fg="#3C3744", activebackground="#CFCBCA", border=5)
+button_divide = Button(root, text="/ ", padx=39, pady=20, command=divide_numbers, bg="#7FD8BE", fg="#3C3744", activebackground="#CFCBCA", border=5)
 
 # put the buttons on the screen
 
