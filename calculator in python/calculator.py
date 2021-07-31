@@ -20,32 +20,32 @@ def add_numbers():
    global first_number 
    global math
    math = "addition" 
-   first_number = int(e.get())
+   first_number = float(e.get())
    e.delete(0, END)
 
 def substract_numbers():
    global first_number 
    global math
    math = "subtraction" 
-   first_number = int(e.get())
+   first_number = float(e.get())
    e.delete(0, END)
 
 def multiply_numbers():
    global first_number 
    global math
    math = "multiplication" 
-   first_number = int(e.get())
+   first_number = float(e.get())
    e.delete(0, END)
 
 def divide_numbers():
    global first_number 
    global math
    math = "division" 
-   first_number = int(e.get())
+   first_number = float(e.get())
    e.delete(0, END)
 
 def buttonEqual():
-   second_number = int(e.get())
+   second_number = float(e.get())
    e.delete(0, END)
 
    if math == "addition":
