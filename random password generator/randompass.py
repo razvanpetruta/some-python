@@ -16,10 +16,6 @@ def generate_pass():
    global result
    result.delete(1.0, END)
 
-   if int(nr_chars.get()) > 23:
-      result.insert(END, "too many characters")
-      return
-
    if want_uppercase.get():
       final += uppercase_letters
    if want_lowercase.get():
@@ -31,6 +27,10 @@ def generate_pass():
 
    if not nr_chars.get().isnumeric():
       result.insert(END, "invalid number of chars")
+      return
+
+   if int(nr_chars.get()) > 23:
+      result.insert(END, "too many characters")
       return
    
    if final == "":
