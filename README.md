@@ -2,7 +2,7 @@
 # Tkinter module in python
 
 I wanted to get used to the python syntax, so I decided to learn tkinter module because
-it seemed interesting to me. Beeing able to visualize what your code does is pretty interesting.
+it seemed interesting to me. Beeing able to visualize what your code does is pretty awesome.
 
 ## Projects
 
